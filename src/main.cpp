@@ -68,7 +68,8 @@ void buttonOnDown(Widget*) {
     comicBook->SetPos(rand() % (WINDOW_WIDTH - 200), rand() % (WINDOW_HEIGHT - 200));
 }
 
-int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
+// int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
+int main()
 {
     srand(static_cast<unsigned int>(time(NULL)));
     hge = hgeCreate(HGE_VERSION);

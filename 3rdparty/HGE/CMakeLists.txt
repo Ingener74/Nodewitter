@@ -10,3 +10,5 @@ ExternalProject_Add(
         BUILD_COMMAND       "" # ${CMAKE_BINARY_DIR}/3rdparty/HGE/${EXT_HGE}-prefix/src/${EXT_HGE}/b2 install variant=release link=static threading=multi --with-system --with-filesystem --with-program_options --prefix=${3RDPARTY_INSTALL} -d0
         INSTALL_COMMAND     ""
 )
+
+set(EXT_HGE_INCLUDES "${CMAKE_BINARY_DIR}/3rdparty/HGE/${EXT_HGE}-prefix/src/${EXT_HGE}/include" CACHE INTERNAL "" FORCE)
